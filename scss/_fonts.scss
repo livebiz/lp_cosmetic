@@ -1,0 +1,28 @@
+
+@font-face {
+	font-family:'CenturyGothic';
+	src: url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.eot');
+	src: url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.woff') format('woff'),
+	url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.ttf') format('truetype'),
+	url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.otf') format('opentype'),
+	url('../fonts/CenturyGothic-Regular/CenturyGothic_gdi.svg#CenturyGothic-Regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-F003;
+}
+
+@font-face {
+	font-family:'CenturyGothic';
+	src: url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.eot');
+	src: url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.woff') format('woff'),
+	url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.ttf') format('truetype'),
+	url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.otf') format('opentype'),
+	url('../fonts/CenturyGothic-Bold/CenturyGothic-Bold_gdi.svg#CenturyGothic-Bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	unicode-range: U+0020-F003;
+}

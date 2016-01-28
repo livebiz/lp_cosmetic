@@ -1,0 +1,132 @@
+.b05 {
+	height: 1050px;
+	color: #282828;
+	overflow: hidden;
+	padding-top: 60px;
+	position: relative;
+	background: url("../img/b05_bg.jpg") 50% 0 no-repeat;
+
+	.b05_dynamic {
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 20;
+		height: 1004px;
+		position: absolute;
+		background: url("../img/b05_dynamic.png") 50% 0 no-repeat;
+	}
+
+	.content {
+		z-index: 100;
+		position: relative;
+	}
+
+	.h2 {
+		font-size: 47px;
+		font-weight: 700;
+		line-height: 50px;
+		margin-bottom: 50px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.how-we-work {
+		padding-top: 160px;
+		margin: 0 -15px 75px -15px;
+		background: url("../img/how-we-work.png") 50% 0 no-repeat;
+
+		li {
+			width: 170px;
+			float: left;
+			font-size: 15px;
+			text-align: center;
+
+			span {
+				display: block;
+				margin-bottom: 8px;
+			}
+
+			.phone {
+				color: #282828;
+				font-size: 20px;
+				font-weight: 700;
+				margin-bottom: 8px;
+				display: inline-block;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.review {
+		padding: 30px 40px;
+		background: #fff;
+		position: relative;
+		@include border-radius(3px);
+
+		.review-item {
+			outline: none;
+			position: relative;
+		}
+
+		.review-image {
+			float: left;
+			width: 230px;
+			overflow: hidden;
+		}
+
+		.review-text {
+			width: 640px;
+			float: right;
+		}
+
+		.review-author {
+			font-size: 17px;
+			line-height: 20px;
+			font-weight: 700;
+			margin-bottom: 10px;
+
+			span {
+				padding: 6px 8px;
+				background: #e2e0e4;
+
+				display: inline-block;
+			}
+		}
+
+		.review-legend {
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 20px;
+			margin-bottom: 10px;
+		}
+
+		p {
+			font-size: 15px;
+			line-height: 21px;
+			font-style: italic;
+			margin-bottom: 15px;
+		}
+
+		.review-nav {
+			top: 50%;
+			width: 31px;
+			height: 61px;
+			z-index: 999;
+			display: block;
+			cursor: pointer;
+			margin-top: -31px;
+			position: absolute;
+			background: url("../img/review-nav.png") no-repeat;
+
+			&.prev {
+				left: 0;
+				background-position: -31px 0;
+			}
+
+			&.next {
+				right: 0;
+				background-position: 0 0;
+			}
+		}
+	}
+}

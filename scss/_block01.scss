@@ -1,0 +1,307 @@
+.top {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 999;
+	height: 125px;
+	position: fixed;
+	min-width: 1020px;
+	padding-top: 15px;
+	background: transparent;
+
+	&.fix-top {
+		background: rgba(45,53,69, 0.8);
+		border-bottom: 1px solid #9aa3b1;
+	}
+
+	.logo {
+		float: left;
+		width: 180px;
+		padding-top: 18px;
+	}
+
+	.contact {
+		float: right;
+		width: 300px;
+		text-align: right;
+
+		.phone {
+			color: #fff;
+			font-size: 25px;
+			font-weight: 700;
+			line-height: 28px;
+			margin-bottom: 8px;
+			display: inline-block;
+		}
+	}
+
+	.topnav {
+		top: 50px;
+		left: 220px;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+
+		li {
+			float: left;
+			margin: 0 13px;
+			position: relative;
+
+			a {
+				color: #fff;
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 20px;
+				text-decoration: none;
+
+				&:hover {
+					border-bottom: 1px solid #fff;
+				}
+			}
+		}
+	}
+}
+
+.b01 {
+	color: #fff;
+	height: 1104px;
+	overflow: hidden;
+	padding-top: 145px;
+	position: relative;
+	background: url("../img/b01_bg.jpg") 50% 0 no-repeat;
+
+	.content {
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 100;
+		height: 1004px;
+		position: absolute;
+	}
+
+	.bg01 {
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 20;
+		height: 1004px;
+		position: absolute;
+		background: url("../img/b01_dinamic1.png") 50% 0 no-repeat;
+	}
+
+	.bg02 {
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 30;
+		height: 1004px;
+		position: absolute;
+		background: url("../img/b01_dinamic2.png") 50% 0 no-repeat;
+	}
+
+	.text-box {
+		margin-bottom: 35px;
+	}
+
+	.text {
+		font-size: 27px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.form-block {
+		float: right;
+	}
+
+	.content-box {
+		position: relative;
+		margin-bottom: 100px;
+	}
+
+	.b01-product {
+		width: 250px;
+		height: 350px;
+		right: 420px;
+		bottom: 0;
+		padding-top: 220px;
+		position: absolute;
+		text-align: center;
+		background: url("../img/b01_product.png") 50% 0 no-repeat;
+
+		.b01-product-text {
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 20px;
+			margin-bottom: 5px;
+		}
+
+		.b01-product-price-old {
+			font-size: 18px;
+			margin-bottom: 15px;
+			text-decoration: line-through;
+		}
+
+		.b01-product-price-new {
+			color: #fff;
+			width: 168px;
+			height: 60px;
+			margin: 0 auto;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 32px;
+			text-align: center;
+			position: relative;
+			padding-top: 20px;
+			background: url("../img/new-price.png")  0 0 no-repeat;
+
+			span {
+				font-size: 22px;
+			}
+		}
+	}
+
+	.advantage {
+		margin: 0 -15px;
+
+		li {
+			color: #fff;
+			float: left;
+			width: 204px;
+			font-size: 13px;
+			text-align: center;
+			position: relative;
+			padding: 140px 5px 0 5px;
+
+			&:before {
+				top: 0;
+				left: 50%;
+				content: '';
+				width: 127px;
+				height: 127px;
+				margin-left: -63px;
+				position: absolute;
+				background: url("../img/b01_item.png") no-repeat;
+			}
+
+			&.item1 {
+
+				&:before {
+					background-position: 0 0;
+				}
+
+				&:hover {
+
+					&:before {
+						background-position: 0 -127px;
+					}
+				}
+			}
+
+			&.item2 {
+
+				&:before {
+					background-position: -127px 0;
+				}
+
+				&:hover {
+
+					&:before {
+						background-position: -127px -127px;
+					}
+				}
+			}
+
+			&.item3 {
+
+				&:before {
+					background-position: -254px 0;
+				}
+
+				&:hover {
+
+					&:before {
+						background-position: -254px -127px;
+					}
+				}
+			}
+
+			&.item4 {
+
+				&:before {
+					background-position: -381px 0;
+				}
+
+				&:hover {
+
+					&:before {
+						background-position: -381px -127px;
+					}
+				}
+			}
+
+			&.item5 {
+
+				&:before {
+					background-position: -508px 0;
+				}
+
+				&:hover {
+
+					&:before {
+						background-position: -508px -127px;
+					}
+				}
+			}
+
+			&:hover {
+				&:before {
+					z-index: 100;
+					-webkit-animation-name: spin;
+					-webkit-animation-duration: 4000ms;
+					-webkit-animation-iteration-count: infinite;
+					-webkit-animation-timing-function: linear;
+					-moz-animation-name: spin;
+					-moz-animation-duration: 4000ms;
+					-moz-animation-iteration-count: infinite;
+					-moz-animation-timing-function: linear;
+					-ms-animation-name: spin;
+					-ms-animation-duration: 4000ms;
+					-ms-animation-iteration-count: infinite;
+					-ms-animation-timing-function: linear;
+					animation-name: spin;
+					animation-duration: 4000ms;
+					animation-iteration-count: infinite;
+					animation-timing-function: linear;
+				}
+			}
+		}
+	}
+}
+
+
+
+.wheel {
+
+}
+@-ms-keyframes spin {
+	from { -ms-transform: rotateY(0deg); }
+	to { -ms-transform: rotateY(360deg); }
+}
+@-moz-keyframes spin {
+	from { -moz-transform: rotateY(0deg); }
+	to { -moz-transform: rotateY(360deg); }
+}
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotateY(0deg); }
+	to { -webkit-transform: rotateY(360deg); }
+}
+@keyframes spin {
+	from {
+		transform:rotateY(0deg);
+	}
+	to {
+		transform:rotateY(360deg);
+	}
+}

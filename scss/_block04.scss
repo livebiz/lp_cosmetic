@@ -1,0 +1,78 @@
+.b04 {
+	color: #282828;
+	overflow: hidden;
+	padding-top: 55px;
+	position: relative;
+	padding-bottom: 55px;
+	@include gradient-vertical(#ffffff, #f1f1f1);
+
+	.b04_dynamic {
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 20;
+		height: 1004px;
+		position: absolute;
+		background: url("../img/b04_dynamic.png") 50% 0 no-repeat;
+	}
+
+	.content {
+		z-index: 100;
+		position: relative;
+	}
+
+	.h2 {
+		font-size: 47px;
+		font-weight: 700;
+		line-height: 50px;
+		margin-bottom: 15px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.text {
+		font-size: 20px;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	.showcase {
+
+		li {
+			width: 25%;
+			float: left;
+			padding: 20px;
+
+			&.item2 {
+				background: #fff;
+			}
+		}
+
+		.showcase-image {
+			height: 290px;
+			margin-bottom: 5px;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+
+		.showcase-text {
+			font-size: 14px;
+			font-weight: 700;
+			margin-bottom: 15px;
+		}
+
+		.showcase-price {
+			font-size: 26px;
+			line-height: 30px;
+			margin-bottom: 15px;
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+}

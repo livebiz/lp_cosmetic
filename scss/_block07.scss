@@ -1,0 +1,288 @@
+.b07 {
+	color: #282828;
+	padding-top: 80px;
+	padding-bottom: 20px;
+	background: #f2f3f5;
+
+	.h2 {
+		font-size: 47px;
+		font-weight: 700;
+		line-height: 50px;
+		text-align: center;
+		margin-bottom: 50px;
+		text-transform: uppercase;
+
+		span {
+			display: block;
+			font-size: 34px;
+			line-height: 40px;
+			padding-bottom: 15px;
+		}
+	}
+
+	.consultant {
+		margin-bottom: 35px;
+
+		.consultant-image {
+			float: left;
+			width: 299px;
+			height: 299px;
+			overflow: hidden;
+			border: 13px solid #fff;
+			@include border-radius(50%);
+		}
+
+		.consultant-content {
+			float: right;
+			width: 685px;
+
+			.consultant-author {
+				color: #c4b005;
+				font-size: 30px;
+				font-weight: 700;
+				line-height: 30px;
+				padding-left: 25px;
+				margin-bottom: 10px;
+			}
+
+			.consultant-legend {
+				font-size: 15px;
+				line-height: 15px;
+				padding-left: 25px;
+				margin-bottom: 10px;
+			}
+
+			.consultant-text {
+				font-size: 15px;
+				line-height: 21px;
+				position: relative;
+				padding: 15px 0 15px 25px;
+
+				&:before {
+					top: 0;
+					left: 0;
+					z-index: 5;
+					content: '';
+					width: 64px;
+					height: 59px;
+					position: absolute;
+					background: url("../img/consultant-text-top.png") 0 0 no-repeat;
+				}
+
+				&:after {
+					bottom: 0;
+					z-index: 5;
+					right: 100px;
+					content: '';
+					width: 64px;
+					height: 59px;
+					position: absolute;
+					background: url("../img/consultant-text-bottom.png") 0 0 no-repeat;
+				}
+			}
+
+			.consultant-text-inner {
+				position: relative;
+				z-index: 100;
+			}
+		}
+	}
+
+	.quest-form {
+		margin-bottom: 30px;
+
+		.quest-form-title {
+			font-size: 28px;
+			font-weight: 700;
+			line-height: 30px;
+			margin-bottom: 30px;
+		}
+
+		.quest-form-row {
+			@include clearfix();
+
+			.quest-form-left {
+				float: left;
+				width: 330px;
+			}
+
+			.quest-form-right {
+				float: right;
+				width: 630px;
+			}
+		}
+
+		.form-group {
+			margin-bottom: 10px;
+		}
+
+		.quest-form-control {
+			margin: 0;
+			width: 100%;
+			border: none;
+			outline: none;
+			color: #0c0c0c;
+			font-size: 14px;
+			padding: 13px 16px;
+			line-height: 20px;
+			background: #fff;
+			resize: none;
+			display: inline-block;
+			border-bottom: 3px solid #e1e2e4;
+			@include placeholder(#0c0c0c);
+			@include border-radius(3px);
+
+			&::-ms-clear {
+				display: none;
+				width: 0;
+				height: 0;
+			}
+
+			&:focus {
+				@include placeholder(transparent);
+			}
+		}
+
+		textarea.quest-form-control {
+			height: 110px;
+		}
+
+		.btn {
+			width: 100%;
+		}
+	}
+
+	.faq {
+		background: #fff;
+		position: relative;
+		margin-bottom: 75px;
+		padding: 35px 25px 0 35px;
+
+		.faq-block {
+			outline: none;
+			position: relative;
+		}
+
+		.faq-item {
+			margin-bottom: 30px;
+		}
+
+		.faq-left {
+			float: left;
+			width: 189px;
+			text-align: center;
+
+			.faq-image {
+				width: 189px;
+				height: 189px;
+				overflow: hidden;
+				margin-bottom: 15px;
+				@include border-radius(50%);
+			}
+
+			.faq-name {
+				font-size: 15px;
+				font-weight: 700;
+			}
+
+			.faq-legend {
+				font-size: 14px;
+			}
+		}
+
+		.faq-right {
+			width: 730px;
+			float: right;
+
+			.faq-quest {
+				padding: 25px;
+				position: relative;
+				margin-bottom: 40px;
+				border: 2px solid #d6c850;
+				@include border-radius(3px);
+
+				&:before {
+					top: 100%;
+					left: 50px;
+					width: 23px;
+					height: 24px;
+					content: ' ';
+					z-index: 30;
+					position: absolute;
+					background: url("../img/faq-quest.png") 0 0 no-repeat;
+				}
+
+				.faq-quest-top {
+					overflow: hidden;
+					position: relative;
+					margin-bottom: 15px;
+				}
+
+				.faq-quest-author {
+					float: left;
+					font-size: 17px;
+					font-weight: 700;
+					line-height: 20px;
+				}
+
+				.faq-quest-date {
+					font-size: 13px;
+					line-height: 20px;
+				}
+
+				.faq-text {
+					font-size: 13px;
+					font-weight: 700;
+					line-height: 21px;
+				}
+			}
+
+			.faq-answer {
+				padding: 0 30px;
+				font-size: 13px;
+				line-height: 21px;
+			}
+		}
+
+	}
+
+	.slick-dots {
+		left: 0;
+		right: 0;
+		font-size: 0;
+		line-height: 0;
+		bottom: -75px;
+		text-align: center;
+		position: absolute;
+
+		li {
+			width: 38px;
+			height: 38px;
+			margin: 0 5px;
+			display: inline-block;
+
+			button {
+				outline: none;
+				width: 38px;
+				height: 38px;
+				padding: 7px 0;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 20px;
+				text-align: center;
+				color: $color-yellow;
+				border: 2px solid $color-yellow;
+				@include border-radius(3px);
+			}
+
+			&.slick-active {
+
+				button {
+					color: #fff;
+					background: $color-yellow;
+				}
+
+			}
+		}
+	}
+}
