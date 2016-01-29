@@ -1274,8 +1274,9 @@ label {
   .b04 .showcase li {
     width: 25%;
     float: left;
-    padding: 20px; }
-    .b04 .showcase li.item2 {
+    padding: 20px;
+    text-align: center; }
+    .b04 .showcase li:hover {
       background: #fff; }
   .b04 .showcase .showcase-image {
     height: 290px;
@@ -1323,10 +1324,16 @@ label {
     margin: 0 -15px 75px -15px;
     background: url("../img/how-we-work.png") 50% 0 no-repeat; }
     .b05 .how-we-work li {
-      width: 170px;
+      width: 190px;
       float: left;
       font-size: 15px;
-      text-align: center; }
+      text-align: center;
+      margin-right: 20px; }
+      .b05 .how-we-work li.item3 {
+        margin-right: 30px; }
+      .b05 .how-we-work li.item5 {
+        width: 170px;
+        margin-right: 0; }
       .b05 .how-we-work li span {
         display: block;
         margin-bottom: 8px; }

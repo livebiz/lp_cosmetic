@@ -36,10 +36,20 @@
 		background: url("../img/how-we-work.png") 50% 0 no-repeat;
 
 		li {
-			width: 170px;
+			width: 190px;
 			float: left;
 			font-size: 15px;
 			text-align: center;
+			margin-right: 20px;
+
+			&.item3 {
+				margin-right: 30px;
+			}
+
+			&.item5 {
+				width: 170px;
+				margin-right: 0;
+			}
 
 			span {
 				display: block;
